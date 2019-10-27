@@ -53,8 +53,8 @@ table{
   }
   a:hover{
       opacity: 40%;
-      color: darkmagenta;
-      background: darkgray;
+      color: white;
+      background: darkslategrey;
   }
 footer{
     position: fixed;
