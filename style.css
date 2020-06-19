@@ -12,7 +12,7 @@ table{
 }
 .introduction{
     text-align: center;
-    margin: 150px 0 90px 0;
+    margin: 15% 0 90px 0;
     transition: 0.4s;
 }
 .accent{
@@ -47,6 +47,12 @@ table{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .mobile_circular {
+      display:none;
+    }
+  .mobile_circular img {
+         display:none;
+      }
   a{
     color: #4eaee6;
     opacity: 100%;   
@@ -56,12 +62,55 @@ table{
       color: white;
       background: darkslategrey;
   }
-footer{
+  footer{
     position: fixed;
     width: 100%;
     bottom: 0;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     margin-block-end: 0px;
     color: #1c1c1c;    
+}
+
+ @media screen and (max-width:400px) {
+
+.circular{
+width: 100%;
+display: none;
+}
+
+.circular img{
+height: 100%;
+display: none;
+}
+
+.mobile_circular {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    display:block;
+  }
+.mobile_circular img {
+      min-width: 160%;
+      min-height: 150%;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+       display:block;
+    }
+    .introduction {
+    margin: 45% 0 90px 0;
+    }
+      footer{
+        font-size: 15px;
+    }
 }
